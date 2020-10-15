@@ -1,0 +1,101 @@
+.mainHead{
+   height: 78px;
+   background-color: black;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+
+}
+
+#logo{
+    margin-left: 20px;
+    padding-top: 13px;
+    width: 55px;
+    height: 66px;
+   
+}
+
+.banner{
+    background-image: url(../images/bckgrnd_home.png);
+    height: 940px ;
+    margin-top: -20px;
+    background-repeat: no-repeat;
+    background-color:#272727 ;
+    .tagline{
+        text-align: center;
+        padding-top: 40px;;
+        font-size: 15px;
+        color: #FEC84A;
+        font-style: oblique;
+    }
+    .tagline1{
+        text-align: center;
+        color: #FEC84A ;
+        font-weight: bold;
+        font-style: oblique;
+        font-size: 90px;
+        margin-bottom: -70px;
+    }
+    .tagline2{
+        text-align: center;
+        color: #FEC84A ;
+        font-weight: bold;
+        font-style: oblique;
+        font-size: 90px;
+        margin-bottom: -70px;
+    }
+    .tagline3{
+        text-align: center;
+        color: #FEC84A ;
+        font-weight: bold;
+        font-style: oblique;
+        font-size: 90px;
+    }
+    .md{
+        text-align: center;
+        color: #FEC84A ;
+        font-weight: bold;
+        font-style: oblique;
+        font-size: 28px;
+    }
+    .junior{
+        text-align: center;
+        color: #FEC84A ;
+        font-weight: bold;
+        font-style: oblique;
+        font-size: 28px;
+        margin-bottom: -27px; 
+    }
+    .gd{
+        text-align: center;
+        color: #FEC84A ;
+        font-weight: bold;
+        font-style: oblique;
+        font-size: 28px;
+    }
+    .and{
+        text-align: center;
+        color: #FEC84A ;
+        font-weight: bold;
+        font-style: oblique;
+        font-size: 28px;
+        margin-top: -27px;
+        margin-bottom: -27px;
+    }
+}
+.shoutme{
+    background-color: white;
+    opacity: 0.6;
+    height: 140px;
+    margin-top:62px;
+
+        h2{
+        padding-top: 60px; 
+        text-align: center;
+        font-size: $main-font-size;
+        color: $main-color;
+        
+
+    }
+}
+
