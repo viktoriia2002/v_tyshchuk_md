@@ -1,12 +1,11 @@
-(() => {
-//burger menu
-var button = document.querySelector("#button");
-var burgerCon = document.querySelector("#c-burgerCon");
+(() =>{
 
-function hamburgerMenu(){
-    burgerCon.classList.toggle("slideToggle");
-    button.classList.toggle("expanded");
-}
-        button.addEventListener("click", hamburgerMenu);
+
+ let menuIcon = document.querySelector('.hamburger-menu');
+ let navbar = document.querySelector('.navbar');
+ menuIcon.addEventListener('click', function(){
+ 
+ navbar.classList.toggle("change");
+ })
 
 })();
