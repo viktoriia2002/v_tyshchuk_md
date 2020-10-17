@@ -1,0 +1,171 @@
+// #mainNav {
+// display: flex;
+// flex-direction: column;
+// justify-content: left;
+//    ul{
+//        list-style-type: none;
+//        margin-top: 30px;
+//        li{
+//            display: inline;
+//            padding-right: 50px;
+//            margin-right: 30px;
+//            a{
+//                text-decoration: none;
+//                color: white;
+//                font-size: 14px;
+//                font-family: $main-font;
+//                font-weight: bold;
+               
+//                &:hover{
+//                    color:#FEC84A;
+//                    transition: all 0.3s;
+//                }
+//            }
+//        }
+//    }
+//     #button{
+//         background: url(../images/c-burger_menu.svg) center no-repeat;
+//         width: 30px;
+//         height: 30px;
+//         border: 0;
+//         margin-top: 25px;
+//         margin-right: 20px;;
+//         cursor: pointer;
+
+//         .expanded{
+//             -webkit-transform: rotate(90deg);
+//             -ms-transform: rotate(90deg);
+//             transform: rotate(90deg);
+//         }
+//     }
+// }
+// #c-burgerMenu li{
+//     display:block;
+//     text-align:center;
+//     margin-top:40px 
+// }
+// #burgerCon{
+//     display:none;
+
+//     .slideToggle{
+//         display:block;
+//     }
+// }
+
+.menu-icon{
+    height: $size;
+    width: $size;
+    position: fixed;
+    z-index: 2;
+    left: 50px;
+    top: 30px;
+    cursor: pointer;
+    &__line{
+        height: 2px;
+        width: $size;
+        display: block;
+        background-color: #ffffff;
+        margin-bottom: 4px;
+        transition: transform .2s ease, background-color .5s ease;
+    }
+    &__line-left{
+        width: $size / 2;
+    }
+    &__line-right{
+        width: $size / 2;
+        float: right;
+    }
+}
+
+.nav{
+   position: fixed; 
+   z-index:1;
+   &:before,&:after{
+       content:"";
+       position: fixed;
+       width: $width;
+       height: $height;
+       background: rgba(#1E1E1E, .2);
+       z-index: -1;
+       transition: transform $transitin--easing $transition--length + s;
+       transform: translate(0%) translateY(-100%);
+   }
+   &:after{
+       background: rgba(#000000, 1);
+       transition-delay: 0s;
+   }
+   &:before{
+       transition-delay: .1s;
+   }
+   &__content{
+       position: fixed;
+       top: 50%;
+       transform: translate(0%,-50%);
+       width: 100%;
+       text-align: center;
+       font-size: $font--size--calc;
+       font-weight: bold;
+       cursor: pointer;
+   }
+   &__list-item{
+       position: relative;
+       display: inline-block;
+       transition-delay: $transition--length + s;
+       opacity: 0;
+       transform: translate(0%,100%);
+       transition: opacity .2 ease, transform .3s ease;
+       margin-right: 25px;
+       &:before{
+           content: "";
+           position: absolute;
+           background: #ffffff;
+           width: 20px;
+           height: 1px;
+           top: 100%;
+           transform: translate(0%, 0%);
+           transition: all .3s ease;
+           z-index: -1;
+       }
+       &:hover{
+           &:before{
+               width: 100%;
+           }
+       }
+   }
+}
+body.nav-active{
+    .menu-icon{
+        &__line{
+            background-color: #fff;
+            transform: translateX(0px) rotate(-45deg);
+        }
+        &__line-left{
+            transform: translateX(1px) rotate(45deg);
+        }
+        &__line-right{
+            transform: translate(-2px) rotate(45deg);
+        }
+    }
+    .nav{
+        visibility: visible;
+        &:before, &:after{
+            transform: translateX(0%) translateY(0%);
+        }
+        &:after{
+            transition-delay: .1s;
+        }
+        &:before{
+            transition-delay: 0s;
+        }
+        &__list-item{
+            opacity: 1;
+            transform: translateX(0%);
+            transition: opacity .3s ease, transform .3s ease, color .3s ease;
+            @for $i from 0 through $menu--items--count {
+				&:nth-child(#{$i}){
+					transition-delay: $transition--length * $i / 8 + .5 + s;
+				}
+			}
+        }
+    }
+}
