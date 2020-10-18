@@ -12,7 +12,7 @@ border:0;
 
 .mainHead{
     height: 78px;
-    background-color: black;
+    background-color:#262525;
     opacity:0.9;
     display: flex;
     flex-direction: row;
@@ -32,7 +32,6 @@ border:0;
      background-image: url(../images/bckgrnd_home.png);
      height: 909px ;
      background-repeat: no-repeat;
-     background-color:#272727 ;
      .tagline{
          margin: 0 auto;
          text-align: center;
@@ -73,19 +72,155 @@ border:0;
      }
  }
  .shoutme{
-     background-color: white;
+     background-color: #F7F7F7;
      opacity: 0.6;
      height: 140px;
      margin-top:77px;
+     text-align: center;
  
-         h2{
-         padding-top: 60px; 
-         text-align: center;
-         font-size: $main-font-size;
+         a{
+         font-size: 22px;
          color: $main-color;
-         
+         text-decoration: none;
+         font-weight: bold;
+         opacity: 0.9;
+         margin-top: 20px;
  
      }
  }
 
- 
+//  about page
+
+.mainContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     .aboutme{
+         text-align: center;
+         color: #DEDDDD;
+         font-family: $main-font;
+         font-style: oblique;
+         font-weight: bold;
+         font-size: 30px;
+         margin-top: 70px;
+
+     }
+     .info{
+         text-align: center;
+         font-size: 18px;
+         color: #DEDDDD; 
+         line-height: 1.2em;
+         letter-spacing: 0.2px;
+     }
+     .resume{
+        text-align: center;
+        font-size: 18px;
+        color: #DEDDDD; 
+        line-height: 1.2em;
+        letter-spacing: 0.2px;
+        a{
+            text-decoration: none;
+            color: #FEC84A;
+        }
+
+     }
+     .gif {
+         display: flex;
+         justify-content: center;
+     img{
+        width: 250px;  
+     }
+    }
+    .ball{
+        display: flex;
+         justify-content: center;
+         margin-bottom: 30px;
+         img{
+            width: 230px; 
+         }
+    }
+}
+
+//work page
+.workContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    margin-left: 2px;
+    .img{
+        width: 50px;
+    }
+    
+}
+
+
+//contact page
+.contContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .git{
+        text-align: center;
+         color: #FEC84A;
+         font-family: $main-font;
+         font-style: oblique;
+         font-weight: bold;
+         font-size: 35px;
+         margin-top: 70px;
+    }
+    .dnhb{
+        text-align: center;
+         font-size: 25px;
+         font-weight: bold;
+         color: #FEC84A; 
+         letter-spacing: 0.2px;
+         margin-top: -26px;
+         font-style: oblique;
+    }
+    .email{
+        text-align:left;
+        margin-top: 25px;;
+        margin-left: 40px;
+         font-size: 16px;
+         font-weight: bold;
+         color: #DEDDDD; 
+         letter-spacing: 0.2px;
+    }
+    .tis{
+        text-align: center;
+        color: #DEDDDD;
+        font-family: $main-font;
+        font-weight: bold;
+        font-size: 42px;
+        margin-top: -5px;
+    }
+    .tel{
+        text-align: left;
+        color: #DEDDDD;
+        font-family: $main-font;
+        font-weight: bold;
+        font-size: 42px;
+        margin-top: -29px;
+        margin-left: 14px;
+        
+    }
+    .inst{
+        text-align:left;
+        margin-top: 25px;;
+        margin-left: 40px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #DEDDDD; 
+        letter-spacing: 0.2px;
+    }
+    .account{
+        text-align: left;
+        color: #DEDDDD;
+        font-family: $main-font;
+        font-weight: bold;
+        font-size: 42px;
+        margin-top: -5px;
+        margin-left: 14px;
+    }
+}
+
