@@ -1,0 +1,26 @@
+<svg id="LOGO" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.62 37.71">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="logo_figure" data-name="logo figure">
+    <path id="element_1" data-name="element 1" class="cls-1" d="M40.54,1.88a.2.2,0,0,0-.13-.36H1.71a.21.21,0,0,0-.14.36L20.92,18.7a.2.2,0,0,0,.27,0Z"/>
+    <line id="element_2" data-name="element 2" class="cls-2" x1="21.06" y1="36.19" x2="1.16" y2="36.19"/>
+    <path id="element_3" data-name="element 3" class="cls-1" d="M9.63,2.29c2.35-.66,8.92.13,11.43,4.33"/>
+    <line id="element_4" data-name="element 4" class="cls-2" x1="41.11" y1="18.85" x2="21.06" y2="18.82"/>
+    <path id="element_5" data-name="element 5" class="cls-1" d="M21.06,1.52V36.19a109.91,109.91,0,0,0,13.4-.38c6.6-.86,6.82-5,6.61-8.65-.46-7.56-20-8.34-20-8.34s-19.38-.23-19-9.91c.27-6.77,9-7.35,19-7.39,8.86,0,17.81,0,19.58,0a.32.32,0,0,1,.32.32L41.11,36a.08.08,0,0,1-.14.06L21.06,18.82c0,5.28,2.9,17.07,10.76,17.23"/>
+  </g>
+</svg>
