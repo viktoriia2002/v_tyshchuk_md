@@ -1,0 +1,513 @@
+@media screen and (min-width: 48em){
+    #container{
+        display: flex;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+
+        .sidebar{
+            float: left;
+            width:250px;
+            
+        }
+       
+    }
+
+    .content{
+        margin: -80px 0px 0px 260px;
+
+        .banner{
+            background-image: url(../images/bckgrnd-home.png);
+            height: 790px ;
+            background-repeat: no-repeat; 
+            .i{
+                font-size: 80px;
+            }
+            .name{
+                font-size: 80px;
+            }
+            .last_name{
+                font-size: 80px;
+            }
+            .junior{
+                font-size: 26px;
+            }
+            .md{
+                font-size: 26px;
+            }
+            .and{
+                font-size: 26px;
+            }
+            .gd{
+                font-size: 26px;
+            }
+        }
+        .shoutme{
+            height: 185px;
+            width: 100%;
+            text-align: left;
+            padding-left: 30px;
+            padding-top: 20px;
+        
+            transition: width 1s cubic-bezier(0,0,1,1) 80ms;
+            &:hover{
+                width: 50%;
+            }
+
+        }
+        .yellowbar{
+            width: 260px;
+            height: 185px;
+            background-color: #FEC84A;
+            margin-top: -185px;
+            margin-left: -260px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+
+            .copyright{
+                width: 160px;
+                padding-bottom: 8px ;
+                
+            }
+
+           .social-menu{
+               padding-top: 8px;
+               
+               .list{
+                   list-style: none;
+                   display: inline;
+                   text-decoration: none;
+                   padding-right: 10px;
+                   a { 
+                       text-decoration: none;
+
+                   img{
+                       width: 27px;
+                       padding-top: 10px;
+                   }
+                }
+               }
+           }
+        }
+    }
+    
+    #logo{
+        margin-top: 210px;
+        
+    }
+    .burgerMenu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        
+
+        .navbar{
+            left:0%;
+            background-color: rgba(30, 30, 30, 0);
+            margin-top: 120px;
+            margin-left: -90px;
+            }
+            .nav-list{
+               display: inline;
+               list-style-type: none;
+               
+                .nav-item{
+                    text-align: center;
+                    list-style: none;
+                    
+                    .nav-link{
+                        display: block;
+                        padding: 10px 0;
+                        text-align: center;
+                        padding-top: 10px;
+                        text-decoration: none;
+                        font-weight: bolder;
+                        font-style: italic;
+                        font-family: Helvetica, sans-serif;
+                        
+                    }
+                }
+            }
+        
+    }
+    .hamburger-menu{
+        .line{
+        display: none;
+        }
+    }
+
+    //about page
+    
+    .aboutContent{
+        margin: -80px 0px 0px 260px;
+       
+       .aboutData{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+           
+
+       }
+        .yellowbar{
+            width:260px;
+            height: 185px;
+            background-color: #FEC84A;
+            margin-top: -185px;
+            margin-left: -260px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+
+            .copyright{
+                width: 160px;
+                padding-bottom: 8px ;
+                
+            }
+
+           .social-menu{
+               padding-top: 8px;
+               
+               .list{
+                   list-style: none;
+                   display: inline;
+                   text-decoration: none;
+                   padding-right: 10px;
+                   a { 
+                       text-decoration: none;
+
+                   img{
+                       width: 27px;
+                       padding-top: 10px;
+                   }
+                }
+               }
+           }
+    }
+    
+ }
+
+ .contactContent {
+    margin: -80px 0px 0px 260px;
+
+    .yellowbar{
+        width:260px;
+        height: 185px;
+        background-color: #FEC84A;
+        margin-top: -185px;
+        margin-left: -260px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+
+        .copyright{
+            width: 160px;
+            padding-bottom: 8px ;
+            
+        }
+
+       .social-menu{
+           padding-top: 8px;
+           
+           .list{
+               list-style: none;
+               display: inline;
+               text-decoration: none;
+               padding-right: 10px;
+               a { 
+                   text-decoration: none;
+
+               img{
+                   width: 27px;
+                   padding-top: 10px;
+               }
+            }
+           }
+       }
+    }
+}
+#app{
+    margin: -80px 0px 0px 260px;
+
+    .yellowbar{
+        width:260px;
+        height: 185px;
+        background-color: #FEC84A;
+        margin-top: -185px;
+        margin-left: -260px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+
+        .copyright{
+            width: 160px;
+            padding-bottom: 8px ;
+            
+        }
+
+       .social-menu{
+           padding-top: 8px;
+           
+           .list{
+               list-style: none;
+               display: inline;
+               text-decoration: none;
+               padding-right: 10px;
+               a { 
+                   text-decoration: none;
+
+               img{
+                   width: 27px;
+                   padding-top: 10px;
+               }
+            }
+           }
+       }
+    }
+}
+
+}
+
+ @media screen and (min-width: 64em){
+
+
+    .ball{
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+
+    
+
+     .content{
+        margin: -80px 0px 0px 260px;
+    .banner{
+                
+        .i{
+            font-size: 90px;
+        }
+        .name{
+            font-size: 90px;
+        }
+        .last_name{
+            font-size: 90px;
+        }
+        .junior{
+            font-size: 33px;
+        }
+        .md{
+            font-size: 33px;
+        }
+        .and{
+            font-size: 33px;
+        }
+        .gd{
+            font-size: 33px;
+        }
+    }
+
+    .shoutme{
+        height: 185px;
+        width: 100%;
+        text-align: left;
+        padding-left: 30px;
+        padding-top: 20px;
+    
+        transition: width 1s cubic-bezier(0,0,1,1) 80ms;
+        &:hover{
+            width: 45%;
+        }
+    
+    }
+
+    .contact-header{
+    .contact-me{
+        font-size: 88px;
+    }
+    .not{
+        font-size: 31px;
+    }
+}
+    
+} 
+
+//about page
+.aboutContent{
+    margin: -80px 0px 0px 260px;
+   
+   .aboutData{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .my-image{
+        width: 300px;
+        height: 300px;
+    }
+       
+
+   }
+    .yellowbar{
+        width:260px;
+        height: 185px;
+        background-color: #FEC84A;
+        margin-top: -155px;
+        margin-left: -260px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+
+        .copyright{
+            width: 160px;
+            padding-bottom: 8px ;
+            
+        }
+
+       .social-menu{
+           padding-top: 8px;
+           
+           .list{
+               list-style: none;
+               display: inline;
+               text-decoration: none;
+               padding-right: 10px;
+               a { 
+                   text-decoration: none;
+
+               img{
+                   width: 27px;
+                   padding-top: 10px;
+               }
+            }
+           }
+       }
+     }
+
+}
+#app{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.button-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ }
+    
+ @media screen and (min-width: 80em){
+
+    .content{
+       margin: -80px 0px 0px 260px;
+   .banner{
+       
+       .i{
+           font-size: 95px;
+       }
+       .name{
+           font-size: 95px;
+       }
+       .last_name{
+           font-size: 95px;
+       }
+       .junior{
+           font-size: 36px;
+       }
+       .md{
+           font-size: 36px;
+       }
+       .and{
+           font-size: 36px;
+       }
+       .gd{
+           font-size: 36px;
+       }
+   }
+
+   .shoutme{
+       height: 185px;
+       width: 100%;
+       text-align: left;
+       padding-left: 30px;
+       padding-top: 20px;
+   
+       transition: width 1s cubic-bezier(0,0,1,1) 80ms;
+       &:hover{
+           width: 30%;
+       }
+   
+   }
+   
+} 
+.yellowbar{
+    width:260px;
+    height: 185px;
+    background-color: #FEC84A;
+    margin-top: -125px;
+    margin-left: -260px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    .copyright{
+        width: 160px;
+        padding-bottom: 8px ;
+        
+    }
+
+   .social-menu{
+       padding-top: 8px;
+       
+       .list{
+           list-style: none;
+           display: inline;
+           text-decoration: none;
+           padding-right: 10px;
+           a { 
+               text-decoration: none;
+
+           img{
+               width: 27px;
+               padding-top: 10px;
+           }
+        }
+       }
+   }
+}
+.about-container{
+
+.data-bottom{
+    font-size: 18px;
+}
+.aboutData{
+    font-size: 18px; 
+}
+.aboutMe{
+    font-size: 33px; 
+}
+
+
+}
+.ball{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.my-image{
+    width: 220px;
+    height: 220px;
+}
+
+
+}
+
+
+
+           
+    
+    
+
+

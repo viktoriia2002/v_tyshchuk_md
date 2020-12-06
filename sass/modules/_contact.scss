@@ -1,0 +1,101 @@
+    .contactContent{
+
+        background-color: $main-bg-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+
+
+    .contact-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        padding-left: 90px ;
+        margin-top: 80px;
+        
+
+    .contact-me{
+        font-size: 68px;
+        color: #F7B02A;
+        font-weight: 550;
+        font-style: italic;
+
+    }
+    .not{
+        font-size: 21px;
+        color: #F7B02A;
+        font-style: italic;
+        font-weight: 500;
+    }
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 130px;
+    margin-bottom: 130px;
+
+#mail-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    label{
+           
+        color:  #F0F0F0;
+        font-weight: 560;
+        display: block;
+        width: 150px;
+        font-style: italic;
+        font-size: 24px;
+        
+        
+}
+    .yellow{
+        background-color: rgb(250,197,72, 0.8);
+        border-radius: 10px;
+        width: 400px;
+        padding: 4px 18px 4px 18px;
+        color: #1E1E1E;
+        width: 280px;
+        height: 45px;
+      }
+
+    .textArea{
+        width: 350px;
+        height: 200px;
+        background-color: #F0F0F0;
+        border-radius: 20px;
+        font-family: $main-font;
+        font-size: 14px;
+        color: #1E1E1E;
+        padding: 15px 18px 4px 18px;
+    }
+
+    .submit-btn{
+        background-color: #F7B02A;
+        border-radius: 20px;
+        font-family: $main-font;
+        font-size: 19px;
+        color: #1E1E1E;
+        width: 130px;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+}
+
+
+.submit-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+ }
+} 
+
+
+

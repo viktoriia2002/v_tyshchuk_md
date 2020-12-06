@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,12 +8,16 @@
 </head>
 <body>
     <div id="container">
-        <header class="mainHead">
+        <header class="mainHead sidebar">
             <div id="logo">
                 <a href="index.html">
-                <img src="images/logo_main.svg" alt="TYSHCHUK">
+                <img class="logo2" src="images/main_logo.svg"  alt="TYSHCHUK">
             </a>
             </div>
+           
+        </header>
+        
+        <div class="burgerMenu">
             <nav class="navbar">
                 <div class="hamburger-menu">
                     <div class="line line-1"></div>
@@ -22,33 +26,79 @@
                 </div>
                 <ul class="nav-list">
                     <li class="nav-item">
+                        <a href="index.html" class="nav-link">HOME</a>
                         <a href="about.html" class="nav-link">ABOUT</a>
                         <a href="work.html" class="nav-link">WORK</a>
                         <a href="contact.html" class="nav-link">CONTACT</a>
                     </li>
                 </ul>
             </nav>
-
-             
-        </header>
+            
+        </div>
+       
+     
     </div>
 
-    <main>
-        <div class="contContent">
-            <h2 class="git">GET IN TOUCH!</h2>
-            <p class="dnhb">do not hold back...</p>
-            <p class="email">Email / tel.</p>
-            <p class="tis">tisukviktoria@gmail.com</p>
-            <p class="tel">+1 (226) 503 8277</p>
-            <p class="inst">Instagram</p>
-            <p class="account">@vika_tyschuk</p>
+    <main class="contactContent">
+        <div class="contact-header">
+        <h2 class="contact-me">GET IN TOUCH!</h1>
+        <p class="not">do not hold back...</p>
+    </div>
+        
+       
+        <div class="contact-form">
+        <form action="./includes/send.php" method="POST" id="mail-form">
+            <div class="atribut">
+            <label for="firstname">Name</label>
+            <input class="yellow" type="text" id="firstname" name="firstname" placeholder="First name"  required>
+            </div><br>
+            <div class="atribut">
+            <label for="lastname">Surname</label>
+            <input class="yellow" type="text" id="lastname" name="lastname" placeholder="Last name"  required>
+            </div><br>
+            <div class="atribut">
+            <label for="email">Email</label>
+            <input class="yellow" type="email" id="email" name="email" placeholder="Email" required>
+            </div><br><br>
+            <label for="message"></label>
+            <textarea class="textArea" name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea></br></br>
+
+            <div class="submit-wrapper">
+                <button class="submit-btn"><span>&#9996;</span>Submit</button>
+                <i class="fas fa-paper-plane"></i>
+            </div>
+
+        </form>
+        </div>
+           
+
+           
+       
+        <div class="yellowbar sidebar">
+            <ul class="social-menu">
+                <li class="list">
+                    <a href="https://twitter.com/?lang=uk">
+                        <img src="images/twitter.svg" alt="">
+                    </a></li>
+                <li class="list"> <a href="https://www.linkedin.com/in/viktoriia-tyshchuk-5082231b7/">
+                    <img src="images/in.svg" alt="">
+                </a></li></li>
+                <li class="list"> <a href="https://www.instagram.com/vika_tyschuk/">
+                    <img src="images/insta.svg" alt="">
+                </a></li></li>
+                
+                
+            </ul>
+            <img class="copyright" src="images/copyright.svg" alt="copyright">
         </div>
              
     </main>
 
    
    <script type="module" src="js/main.js"></script> 
-   <script type="module" src="js/DataModule.js"></script> 
-   <script type="module" src="js/NavSystem.js"></script> 
+   <script type="module" src="js/TheBurgerMenu.js"></script> 
+   <script type="module" src="js/form.js"></script> 
+
+
 </body>
 </html>

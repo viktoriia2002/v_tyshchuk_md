@@ -1,0 +1,142 @@
+//  about page
+.aboutContent{
+
+    background-color: $main-bg-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .wonder{
+        font-size: 10px;
+        color: #DEDDDD;
+        text-align: center;
+        margin-bottom: 30px;
+        margin-top: 40px;
+    }
+       
+    .about-container{
+     
+        .data-bottom {
+            color: #DEDDDD;
+            padding-left: 60px;
+            padding-right: 60px;
+            padding-bottom: 20px;
+            line-height: 1.5;
+        }
+
+     .aboutMe{
+         text-align: left;
+         color: #DEDDDD;
+         font-family: $main-font;
+         font-style: oblique;
+         font-weight: bold;
+         font-size: 30px;
+         margin-top: 50px;
+         margin-bottom: 30px;
+         padding-left: 60px;
+
+     }
+        .aboutData{
+        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        color: #DEDDDD;
+        line-height: 1.5;
+        padding-left: 60px;
+        padding-right: 30px;
+        }
+        .my-image{
+            margin: 0 auto;
+            text-emphasis: center;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            background-image: url(../images/moi1.jpg); ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            width: 190px;
+            height: 190px;
+            left: 30px;
+            top: 5px;
+            border-radius: 39% 61% 38% 62% / 60% 38% 62% 40%  ;
+        
+        }
+    }
+}
+     
+     
+    .ball {
+        
+         
+         .shape{
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(90deg, rgba(255,174,0,1) 0%, rgba(255,185,0,1) 35%, rgba(255,185,0,1) 100%);
+            text-align: center;
+            background-position: center center;
+            border-radius: 51% 49% 66% 34% / 53% 54% 46% 47%   ;
+            animation: box-animation 5s ease-in-out infinite;
+            margin-top: -180px;
+            
+
+            @keyframes box-animation{
+                0%{
+                    border-radius:39% 61% 66% 34% / 47% 55% 45% 53% ;
+                }
+                50%{
+                    border-radius:66% 34% 66% 34% / 47% 55% 45% 53% ;
+                }
+                100%{
+                    border-radius:39% 61% 66% 34% / 47% 55% 45% 53%   ;
+                }
+            }
+
+            
+         }
+         .shape-1{
+            margin: 0 auto;
+            text-emphasis: center;
+            position: relative;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(90deg, rgba(255,174,0,0.6) 0%, rgba(255,185,0,0.6) 35%, rgba(255,185,0,0.6) 100%);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            width: 200px;
+            height: 200px;
+            left: 30px;
+            top: 10px;
+            border-radius: 51% 49% 66% 34% / 53% 54% 46% 47% ;
+            animation: box-animation1 5s ease-in-out infinite;
+
+             a{
+                 text-decoration: none;
+                 color:  #1E1E1E;
+             }   
+    
+            @keyframes box-animation1 {
+                0%{
+                    border-radius: 56% 44% 55% 45% / 39% 57% 43% 61%;
+                }
+                50%{
+                    border-radius: 64% 36% 53% 47% / 37% 46% 54% 63% ;
+                }
+                100%{
+                    border-radius: 56% 44% 55% 45% / 39% 57% 43% 61%;
+                }
+            }
+         }
+        }
+    
+
+
+
+
