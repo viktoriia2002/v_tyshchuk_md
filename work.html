@@ -5,15 +5,21 @@
     <link rel="stylesheet" href="css/master.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TYSHCHUK Portfolio</title>
+
+    
 </head>
 <body>
     <div id="container">
-        <header class="mainHead">
+        <header class="mainHead sidebar">
             <div id="logo">
                 <a href="index.html">
-                <img src="images/logo_main.svg" alt="TYSHCHUK">
+                <img class="logo2" src="images/main_logo.svg"  alt="TYSHCHUK">
             </a>
             </div>
+           
+        </header>
+        
+        <div class="burgerMenu">
             <nav class="navbar">
                 <div class="hamburger-menu">
                     <div class="line line-1"></div>
@@ -22,37 +28,55 @@
                 </div>
                 <ul class="nav-list">
                     <li class="nav-item">
+                        <a href="index.html" class="nav-link">HOME</a>
                         <a href="about.html" class="nav-link">ABOUT</a>
                         <a href="work.html" class="nav-link">WORK</a>
                         <a href="contact.html" class="nav-link">CONTACT</a>
                     </li>
                 </ul>
             </nav>
-
-             
-        </header>
-    </div>
-
-    <main>
-        <div class="workContent">
-            
-                <img src="images/gallery.png" alt="item" width="250">
-                <img src="images/gallery.png" alt="item" width="250">
-                <img src="images/gallery.png" alt="item" width="250">
-                <img src="images/gallery.png" alt="item" width="250">
-            
-                <img src="images/gallery.png" alt="item" width="250">
-                <img src="images/gallery.png" alt="item" width="250">
-                <img src="images/gallery.png" alt="item" width="250">
-                <img src="images/gallery.png" alt="item" width="250">
             
         </div>
+       
+     
+    </div>
+    <main id="app">
+
+        <!-- <button @click="switchComponents">Switch!</button> -->
+        <buttoncomponent v-for="item in mediaCollection" :item="item" :key="item.id"
+         @setmediatype="setComponent"></buttoncomponent>
+        <lightbox :item="currentItem" :mediatype="mediaType"></lightbox>
+
+        <!-- conditionally render a component using the generic component tag -->
+        <component :is="activeComponent"></component>
+
+        <div class="yellowbar sidebar">
+            <ul class="social-menu">
+                <li class="list">
+                    <a href="https://twitter.com/?lang=uk">
+                        <img src="images/twitter.svg" alt="">
+                    </a></li>
+                <li class="list"> <a href="https://www.linkedin.com/in/viktoriia-tyshchuk-5082231b7/">
+                    <img src="images/in.svg" alt="">
+                </a></li></li>
+                <li class="list"> <a href="https://www.instagram.com/vika_tyschuk/">
+                    <img src="images/insta.svg" alt="">
+                </a></li></li>
+                
+            </ul>
+            <img class="copyright" src="images/copyright.svg" alt="copyright">
+        </div>
+   
+              
+          
+       
       
     </main>
 
    
-   <script type="module" src="js/main.js"></script> 
-   <script type="module" src="js/DataModule.js"></script> 
-   <script type="module" src="js/NavSystem.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script defer src='js/main.js' type='module'></script>
+   <script type="module" src="js/TheBurgerMenu.js"></script> 
+  
 </body>
 </html>

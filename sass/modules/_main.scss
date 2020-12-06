@@ -1,9 +1,14 @@
-body{
-background-color: $main-bg-color;
-font-family: $main-font;
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-margin:0;
-border:0;
+body{
+background-color:#272727 ;
+font-family: $main-font;
+height: 100%;
 }
 
 .hidden{
@@ -12,215 +17,259 @@ border:0;
 
 .mainHead{
     height: 78px;
-    background-color:#262525;
-    opacity:0.9;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    #logo{
+        margin-left: 20px;
+        padding-top: 13px;
+        width: 55px;
+        height: 66px;
+       opacity:0.9;
+       position: fixed;
+       
+       
+       .logo2{
+           width: 200px;
+           cursor: pointer;
+           margin-top: 4px;
+           transition: all 0.8s;
+           position: relative;
+           
+         }
+    }
  
  }
  
- #logo{
-     margin-left: 20px;
-     padding-top: 13px;
-     width: 55px;
-     height: 66px;
-    
- }
+ 
+  
+ 
+  .content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
  
  .banner{
-     background-image: url(../images/bckgrnd_home.png);
-     height: 909px ;
+     
+     background-image: url(../images/bckgrnd.png);
+     height: 790px ;
      background-repeat: no-repeat;
+     
+     
      .tagline{
-         margin: 0 auto;
+         margin-top: 30px;
          text-align: center;
          font-size: 15px;
          color: #FEC84A;
          font-style: oblique;
-         padding-top: 25px;
+         padding-top: 35px;
      }
-     .user-pronoun{
+     .i{
          text-align: center;
          color: #FEC84A ;
          font-weight: bold;
          font-style: oblique;
-         font-size: 90px;
-         margin-bottom: -29px;
+         font-size: 70px;
+         padding: 10px;
+         margin-top: 40px;
      }
-     .user-name{
+     .name{
          text-align: center;
          color: #FEC84A ;
          font-weight: bold;
          font-style: oblique;
-         font-size: 90px;
-         margin-bottom: -40px;
+         font-size: 70px;
+         padding: 10px;
      }
-     .user-surname{
+     .last_name{
          text-align: center;
          color: #FEC84A ;
          font-weight: bold;
          font-style: oblique;
-         font-size: 90px;
+         font-size: 70px;
      }
-     .user-role{
+      .title{
+         white-space: nowrap; 
+         margin: 0 auto;
+         overflow: hidden;  
+       
+         animation: 
+         animated-text 2s steps(30,end) 0.3s  none;
+      
+         @keyframes animated-text{
+             from{width: 0;}
+            
+         }
+     }
+     .title2{
+         margin: 0 auto;
+         overflow: hidden;  
+         white-space: nowrap; 
+       
+         animation: 
+         animated-text 2s steps(30,end)   none;
+      
+         @keyframes animated-text{
+             from{width: 0;}
+             to{width: 600px;}
+         }
+     }
+     .title3{
+         margin: 0 auto;
+         overflow: hidden;  
+         white-space: nowrap; 
+       
+         animation: 
+         animated-text 2s steps(30,end) 1s  none;
+      
+         @keyframes animated-text{
+             from{width: 0;}
+             to{width: 600px;}
+         }
+     }
+     .title4{
+         margin: 0 auto;
+         overflow: hidden;  
+         white-space: nowrap; 
+       
+         animation: 
+         animated-text 2s steps(30,end) 2.6s 1 normal none;
+      
+         @keyframes animated-text{
+             from{width: 0;}
+             to{width: 600px;}
+         }
+     }
+     .title5{
+         margin: 0 auto;
+         overflow: hidden;  
+         white-space: nowrap; 
+       
+         animation: 
+         animated-text 2s steps(30,end) 2.9s 1 normal none;
+      
+         @keyframes animated-text{
+             from{width: 0;}
+             to{width: 600px;}
+         }
+     }
+     .title6{
+         margin: 0 auto;
+         overflow: hidden;  
+         white-space: nowrap; 
+       
+         animation: 
+         animated-text 2s steps(30,end) 3.4s 1 normal none;
+      
+         @keyframes animated-text{
+             from{width: 0;}
+             to{width: 600px;}
+         }
+     }
+     .title7{
+         margin: 0 auto;
+         overflow: hidden;  
+         white-space: nowrap; 
+       
+        animation: 
+         animated-text 2s steps(30,end) 3.5s 1 normal none;
+      
+         @keyframes animated-text{
+             from{width: 0;}
+             to{width: 600px;}
+         }
+        }
+    
+    
+    
+     
+     .junior{
          text-align: center;
          color: #FEC84A ;
          font-weight: bold;
          font-style: oblique;
-         font-size: 28px;
+         font-size: 24px;
+         margin-top: 40px;
+         
      }
+     .md{
+        text-align: center;
+        color: #FEC84A ;
+        font-weight: bold;
+        font-style: oblique;
+        font-size: 24px;
+        margin-top: 10px;
+        
+    }
+    .and{
+        text-align: center;
+        color: #FEC84A ;
+        font-weight: bold;
+        font-style: oblique;
+        font-size: 24px;
+        margin-top: 10px;
+        
+    }
+    .gd{
+        text-align: center;
+        color: #FEC84A ;
+        font-weight: bold;
+        font-style: oblique;
+        font-size: 24px;
+        margin-top: 10px;
+        
+    }
  }
  .shoutme{
      background-color: #F7F7F7;
      opacity: 0.6;
-     height: 140px;
-     margin-top:77px;
+     height: 150px;
+     
      text-align: center;
  
-         a{
+         p{
          font-size: 22px;
-         color: $main-color;
          text-decoration: none;
          font-weight: bold;
          opacity: 0.9;
-         margin-top: 20px;
- 
+         padding-top: 60px;
+            a{
+                text-decoration: none;
+                color: $main-color;
+            }
      }
+ }
+ .yellowbar{
+    height: 110px;
+    background-color: #FEC84A;
+    text-align: center;
+    .social-menu{
+        text-align: center;
+        padding-top: 20px;;
+    .list{
+        list-style: none;
+        display: inline;
+        text-decoration: none;
+        padding-right: 10px;
+        a { 
+            text-decoration: none;
+     }
+    }
+    img{
+        width: 27px;
+        padding-top: 5px;
+        padding-left: 5px;
+        
+        }
+}
+     .copyright{
+         width: 170px;
+         padding-top: 12px;
+     }    
+    
  }
 
 //  about page
-
-.mainContent{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-     .aboutme{
-         text-align: center;
-         color: #DEDDDD;
-         font-family: $main-font;
-         font-style: oblique;
-         font-weight: bold;
-         font-size: 30px;
-         margin-top: 70px;
-
-     }
-     .info{
-         text-align: center;
-         font-size: 18px;
-         color: #DEDDDD; 
-         line-height: 1.2em;
-         letter-spacing: 0.2px;
-     }
-     .resume{
-        text-align: center;
-        font-size: 18px;
-        color: #DEDDDD; 
-        line-height: 1.2em;
-        letter-spacing: 0.2px;
-        a{
-            text-decoration: none;
-            color: #FEC84A;
-        }
-
-     }
-     .gif {
-         display: flex;
-         justify-content: center;
-     img{
-        width: 250px;  
-     }
-    }
-    .ball{
-        display: flex;
-         justify-content: center;
-         margin-bottom: 30px;
-         img{
-            width: 230px; 
-         }
-    }
-}
-
-//work page
-.workContent{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 15px;
-    margin-left: 2px;
-    .img{
-        width: 50px;
-    }
-    
-}
-
-
-//contact page
-.contContent{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    .git{
-        text-align: center;
-         color: #FEC84A;
-         font-family: $main-font;
-         font-style: oblique;
-         font-weight: bold;
-         font-size: 35px;
-         margin-top: 70px;
-    }
-    .dnhb{
-        text-align: center;
-         font-size: 25px;
-         font-weight: bold;
-         color: #FEC84A; 
-         letter-spacing: 0.2px;
-         margin-top: -26px;
-         font-style: oblique;
-    }
-    .email{
-        text-align:left;
-        margin-top: 25px;;
-        margin-left: 40px;
-         font-size: 16px;
-         font-weight: bold;
-         color: #DEDDDD; 
-         letter-spacing: 0.2px;
-    }
-    .tis{
-        text-align: center;
-        color: #DEDDDD;
-        font-family: $main-font;
-        font-weight: bold;
-        font-size: 42px;
-        margin-top: -5px;
-    }
-    .tel{
-        text-align: left;
-        color: #DEDDDD;
-        font-family: $main-font;
-        font-weight: bold;
-        font-size: 42px;
-        margin-top: -29px;
-        margin-left: 14px;
-        
-    }
-    .inst{
-        text-align:left;
-        margin-top: 25px;;
-        margin-left: 40px;
-        font-size: 16px;
-        font-weight: bold;
-        color: #DEDDDD; 
-        letter-spacing: 0.2px;
-    }
-    .account{
-        text-align: left;
-        color: #DEDDDD;
-        font-family: $main-font;
-        font-weight: bold;
-        font-size: 42px;
-        margin-top: -5px;
-        margin-left: 14px;
-    }
-}
 
